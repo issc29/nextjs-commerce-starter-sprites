@@ -13,7 +13,7 @@ export function formatPrice(
   return new Intl.NumberFormat(siteConfig.locale, {
     style: "currency",
     currency: currency ?? siteConfig.currency,
-  }).format(priceInCents / 100)
+  }).format(priceInCents / 10)
 }
 
 export function formatDate(date: string | Date): string {
